@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$CFILE" ]; then
+    echo "Erreur : la variable CFILE n'est pas définie."
+    exit 1
+fi
+cpp "$CFILE" -o c
+
+
