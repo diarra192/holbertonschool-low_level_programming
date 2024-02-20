@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+*main - main block
+* Return: 0
+*/ 
 int main(void)
 {
-    srand(time(NULL)); 
+    srand(time(0)); 
 
     int n = rand() % (2 * RAND_MAX) - RAND_MAX; 
     printf("%d\n", n); 
