@@ -1,19 +1,14 @@
-#include <stdio.h>
+#iinclude <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-/**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
- */
+ i
 int main(void)
 {
-    srand(time(NULL)); // Initialize the random number generator
+    srand(time(NULL)); 
 
-    int n = rand() % (2 * RAND_MAX) - RAND_MAX; // Generate a random number between -RAND_MAX and RAND_MAX
-
-    printf("%d\n", n); // Print the generated number
+    int n = rand() % (2 * RAND_MAX) - RAND_MAX; 
+    printf("%d\n", n); 
 
     if (n > 0)
     {
@@ -29,4 +24,4 @@ int main(void)
     }
 
     return (0);
-}i
+}
