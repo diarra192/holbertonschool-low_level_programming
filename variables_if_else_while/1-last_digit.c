@@ -9,8 +9,8 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     
-    int lastDigit = abs(n) % 10;
-    
+    int lastDigit = abs(n) % 10; // Moved declaration to the beginning
+
     printf("The last digit of %d is ", n);
     if (lastDigit > 5) {
         printf("and is greater than 5\n");
