@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * main -main block
+ * alphabet in lowcase
+ * Return: 0
+ */
 int main(void)
 {
 	char letter;
