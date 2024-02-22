@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ * main - main block
  * Write a program that prints all single digit
  * Return: 0
  */
