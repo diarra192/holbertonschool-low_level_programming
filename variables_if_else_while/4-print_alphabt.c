@@ -1,14 +1,18 @@
 #include <stdio.h>
+/* more headers goes there */
 
-int main() 
+/* betty style doc for function main goes there */
+int main(void) 
 {
-	for (char letter = 'a'; letter <= 'z'; letter++) {
-		if (letter != 'q' && letter != 'e') {
-			putchar(letter);
-		}
-	}
+    char letter;
 
-	putchar('\n');
-
-	return (0);
-i}
+    for (letter = 'a'; letter <= 'z'; ++letter) {
+        if (letter != 'q' && letter != 'e') {
+            putchar(letter);
+        }
+    }
+    
+    putchar('\n'); // Print a new line
+    
+    return (0);
+}
