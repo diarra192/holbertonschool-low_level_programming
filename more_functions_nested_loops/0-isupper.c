@@ -1,7 +1,9 @@
-#include <stdio.h>
-
-int main(void)
+/**
+ *Vérifie si un caractèr
+ *
+ * Return: 1 si c est en majuscule, 0 sinon.
+ */
+int _isupper(int c)
 {
-    printf("_putchar\n");
-    return 0;
+    return (c >= 'A' && c <= 'Z');
 }
