@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* main - Prints all possible combinations of single-
-*
+* main - Prints all possible combinations
 * Return: Always 0.
 */
 void print_most_numbers(void)
