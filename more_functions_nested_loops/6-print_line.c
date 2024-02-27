@@ -1,17 +1,25 @@
-#include "main.h"
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int num;
+#include <stdio.h>
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+void _putchar(char c) {
+    putchar(c);
+}
 
-	putchar('\n');
+void print_line(int n) {
+    if (n <= 0) {
+        _putchar('\n');
+        return;
+    }
 
-	return (0);
+    for (int i = 0; i < n; i++) {
+        _putchar('_');
+    }
+    _putchar('\n');
+}
+
+int main() {
+    int n;
+    printf("Entrez le nombre de fois que le caractère _ doit être imprimé : ");
+    scanf("%d", &n);
+    print_line(n);
+    return 0;
 }
