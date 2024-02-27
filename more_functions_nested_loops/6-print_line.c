@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_line - Draws a straight line using the character _.
+ * @n: The number of _ characters to be printed.
  */
-int main(void)
+void print_line(int n)
 {
-    print_line(0);
-    print_line(2);
-    print_line(10);
-    print_line(-4);
-    return (0);
+int b;
+if (n > 0)
+{
+for (b = 0; b < n; b++)
+_putchar('_');
+}
+_putchar('\n');
 }
