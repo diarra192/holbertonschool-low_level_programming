@@ -1,34 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - main block
- * Return: mai
+ * print_triangle - Function to print a triangle of '#' characters
+ * @size: Size of the triangle
+ * Return: void
  */
-void imprimerTriangle(int hauteur) {
-    int ligne, colonne;
+void print_triangle(int size)
+{
+int i;
+int j;
 
-    // Boucle sur chaque ligne du triangle
-    for (ligne = 1; ligne <= hauteur; ligne++) {
-        // Boucle pour imprimer les espaces avant les étoiles
-        for (colonne = 1; colonne <= hauteur - ligne; colonne++) {
-            printf(" ");
-        }
-        // Boucle pour imprimer les étoiles
-        for (colonne = 1; colonne <= 2 * ligne - 1; colonne++) {
-            printf("*");
-        }
-        // Nouvelle ligne à la fin de chaque ligne du triangle
-        printf("\n");
-    }
+if (size <= 0)
+_putchar('\n');
+
+for (i = 1; i <= size; i++)
+{
+for (j = 1; j <= size - i; j++)
+_putchar(' ');
+for (j = 1; j <= i; j++)
+_putchar('#');
+
+_putchar('\n');
 }
-
-int main() {
-    int hauteur;
-
-    printf("Entrez la hauteur du triangle : ");
-    scanf("%d", &hauteur);
-
-    imprimerTriangle(hauteur);
-
-    return 0;
 }
-
