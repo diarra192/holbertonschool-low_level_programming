@@ -6,12 +6,12 @@
  * @src: second input string
  * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int i, len;
-
+	int i;
+        int len;
 	len = 0;
+
 	while (dest[len] != '\0')
 	{
 		++len;
