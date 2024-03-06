@@ -1,40 +1,18 @@
-#include "notrebloh.h"
+#include "../main.h"
+#include "../4-strpbrk.c"
 
 /**
- * _strchr - check for character in an array
- * @s: pointer to array
- * @c: char type
+ * main - check the code
  *
- * Return: arrayed at check
+ * Return: Always 0.
  */
-
-char *_strchr(char *s, char c)
+int main(void)
 {
-	while (*s != '\0')
-	{
-		if (*s == c)
-			return (s);
-		s++;
-	}
-	if (c == '\0')
-		return (s);
-	s = 0;
-	return (s);
-}
-/**
- * *_strpbrk - find first appearance of a char in an array
- *
- * @s: pointer array to be searched
- * @accept: pointer array with char to be searched
- * Return:  pointer to array
- */
+	char *s = "hello, world";
+	char *f = "world";
+	char *t;
 
-char *_strpbrk(char *s, char *accept)
-{
-	for (; *s; s++)
-	{
-		if (_strchr(accept, *s) != 0)
-			return ((char *) s);
-	}
+	t = _strpbrk(s, f);
+	printf("%s\n", t);
 	return (0);
 }
