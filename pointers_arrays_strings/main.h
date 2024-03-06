@@ -15,3 +15,4 @@ char *_strncpy(char *dest, char *src, int n);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *_strchr(char *s, char c);
+char *_strpbrk(char *s, char *accept);
