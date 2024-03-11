@@ -1,17 +1,23 @@
-#include "main.h"
+#include <stddef.h>
 /**
- * _memcpy - copies memory
- * @dest: destination str
- * @src: source str
- * @n: number of bytes to copy
- * Return: string
+ *_strchr - locates a character in a string
+ *@s: arg1
+ *@c: arg2
+ *Return: NULL
  */
-char *_strchr(char *s, char c) {
-    while (*s != '\0') {
-        if (*s == c) {
-            return s;
-        }
-        s++;
-    }
-    return NULL;
+char *_strchr(char *s, char c)
+{
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
+	}
+	if (*s == c)
+	{
+		return (s);
+	}
+	return (NULL);
 }
