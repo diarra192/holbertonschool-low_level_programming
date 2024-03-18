@@ -1,3 +1,4 @@
+julien@ubuntu:~/0x0e. Function pointers$ cat 0-main.c
 #include <stdio.h>
 #include "function_pointers.h"
 
