@@ -1,4 +1,5 @@
-#include "function_pointers.h"
+#include "void print_name(char *name, void (*f)(char *));"
+#include "int _putchar(char c);"
 #include <stdio.h>
 /**
  * print_name - print name using pointer to function
@@ -13,4 +14,4 @@
 
 
 		f(name);
-	}
+	}i}
