@@ -1,26 +1,24 @@
 #include <stdio.h>
-
 /**
- * main - bloc principal
- * Écrit un programme qui affiche tous les chiffres uniques
- * Retourne: 0
+ * main - Destination
+ * Return: Always 0 (Success)
  */
+
 int main(void)
+
 {
-    int num;
+	int n;
 
-    for (num = 0; num <= 9; num++)
-    {
-        putchar((num % 10) + '0');
-        if (num == 9)
-            continue;
+	for (n = 48 ; n <= 57 ; n++)
+	{
+		putchar(n);
+		if (n <= 56)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
 
-        putchar(',');
-        putchar(' ');
-    }
-
-    putchar('\n');
-
-    return (0);
+	putchar('\n');
+	return (0);
 }
-
