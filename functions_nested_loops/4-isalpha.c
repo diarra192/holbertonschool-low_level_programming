@@ -2,6 +2,10 @@
 #include "main.h"
 #include <ctype.h>
 
+/**
+ * diarrr
+ *
+ */
 int _isalpha(int c)
 {
 	int temp;
