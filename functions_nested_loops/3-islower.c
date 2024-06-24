@@ -2,7 +2,12 @@
 #include "main.h"
 #include <ctype.h>
 
-
+/**
+ * _abs - Computes the absolute value of an integer.
+ * @c: The number to be computed.
+ *
+ * Return: void
+ */
 int _islower(int c)
 {
 	int temp;
