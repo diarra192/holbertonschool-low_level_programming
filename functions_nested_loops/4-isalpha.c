@@ -3,9 +3,12 @@
 #include <ctype.h>
 
 /**
- * diarrr
+ * _isalpha - alphabetic order
+ * @c : character to check
+ * Return: If lowercase = 1, else 0
  *
  */
+
 int _isalpha(int c)
 {
 	int temp;
@@ -20,4 +23,3 @@ int _isalpha(int c)
 	}
 	return (temp);
 }
-
