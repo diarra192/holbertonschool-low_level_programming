@@ -2,7 +2,7 @@
 
 /**
  * main - Destination
- * Return: Always 0 (Success)
+ * ys 0 (Success)
  */
 int main(void)
 {
