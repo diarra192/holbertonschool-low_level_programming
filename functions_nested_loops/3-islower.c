@@ -3,11 +3,12 @@
 #include <ctype.h>
 
 /**
- * _abs - Computes the absolute value of an integer.
- * @c: The number to be computed.
+ * _islower - check lowercase character
+ * @c : character to check
+ * Return: If lowercase = 1, else 0
  *
- * Return: void
  */
+
 int _islower(int c)
 {
 	int temp;
@@ -22,4 +23,3 @@ int _islower(int c)
 	}
 	return (temp);
 }
-
